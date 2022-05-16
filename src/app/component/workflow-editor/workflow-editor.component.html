@@ -1,0 +1,16 @@
+<input type="text" class="form-control textbox" [(ngModel)]="inputData"/>
+<button (click)="addNewOperator(inputData)">Add data</button>
+<button (click)="undo()">Undo</button>
+<button (click)="redo()">Redo</button>
+<button (click)="connect()">{{ textContent }}</button>
+
+
+<link rel="stylesheet" type="text/css" href="https://cdn.quilljs.com/1.3.6/quill.snow.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css">
+
+<div id="propertyEditor"></div>
+
+<div class="texera-workspace-workflow-editor-body texera-workflow-component-body">
+  <div class="texera-workspace-workflow-jointjs" #paper id="paper-container"></div>
+</div>
